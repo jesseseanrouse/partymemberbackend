@@ -2,7 +2,7 @@
 require('dotenv').config()
 
 // set up connections/imports
-const mongoose = require('../DB/connection')
+const mongoose = require('./DB/connection')
 const cors = require('cors')
 const express = require('express')
 const app = express()
@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(cors())
 
 // Routes
-const partyRouter = require('../controller/partyMember')
+const partyRouter = require('./controller/partyMember')
 app.use('/party', partyRouter)
 
 // Basic route
