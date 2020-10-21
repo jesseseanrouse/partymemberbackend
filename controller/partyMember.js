@@ -32,7 +32,7 @@ router.delete('/:name', async (req, res) => {
 });
 
 router.delete("/:id", async (req, res) => {
-  res.json(await Dog.findByIdAndRemove(req.params.id));
+  res.json(await partyMember.findByIdAndRemove(req.params.id));
 });
 
 module.exports = router;
