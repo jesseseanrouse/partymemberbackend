@@ -1,7 +1,6 @@
 // copied from fruit lab with minor edits
-const express = require('express');
-const mongoose = require('../DB/connection');
-const router = express.Router();
+const { Router } = require('express');
+const router = Router();
 const Party = require('../models/party');
 const PartyMember = require('../models/partyMember');
 
