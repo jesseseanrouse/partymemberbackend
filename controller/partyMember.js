@@ -31,4 +31,8 @@ router.delete('/:name', async (req, res) => {
 	res.json(await partyMember.findOneAndDelete({ name: req.params.name }));
 });
 
+router.delete("/:id", async (req, res) => {
+  res.json(await Dog.findByIdAndRemove(req.params.id));
+});
+
 module.exports = router;
