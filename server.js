@@ -2,7 +2,7 @@
 require('dotenv').config();
 
 // set up connections/imports
-const mongoose = require('./db/connection');
+const mongoose = require('./connection');
 const cors = require('cors');
 const express = require('express');
 const app = express();
